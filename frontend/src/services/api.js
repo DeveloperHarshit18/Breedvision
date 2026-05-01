@@ -7,7 +7,7 @@ import axios from 'axios';
 
 // In development, CRA's proxy (package.json → "proxy") forwards /api/* to Flask.
 // In production, set REACT_APP_API_URL=https://your-backend.com
-const BASE_URL = process.env.REACT_APP_API_URL || '';
+const BASE_URL = process.env.REACT_APP_API_URL || 'https://breedvision.onrender.com';
 
 const api = axios.create({
   baseURL: BASE_URL,
