@@ -1,0 +1,56 @@
+.conf-bar-wrapper {
+  width: 100%;
+}
+
+.conf-bar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.conf-bar-label {
+  font-size: 13px;
+  color: var(--text-secondary);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.conf-bar-pct {
+  font-size: 22px;
+  font-weight: 700;
+  font-family: var(--font-display);
+  letter-spacing: -1px;
+}
+
+.conf-bar-pct--high   { color: var(--accent-green-light); }
+.conf-bar-pct--medium { color: var(--accent-gold); }
+.conf-bar-pct--low    { color: #e07070; }
+
+.conf-bar-track {
+  height: 8px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.conf-bar-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.conf-bar-fill--high {
+  background: linear-gradient(90deg, var(--accent-green), var(--accent-green-light));
+  box-shadow: 0 0 12px rgba(79, 173, 119, 0.4);
+}
+
+.conf-bar-fill--medium {
+  background: linear-gradient(90deg, #b8830a, var(--accent-gold));
+  box-shadow: 0 0 12px rgba(212,168,71,0.35);
+}
+
+.conf-bar-fill--low {
+  background: linear-gradient(90deg, #a04040, #e07070);
+}

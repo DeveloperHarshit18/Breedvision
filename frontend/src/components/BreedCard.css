@@ -1,0 +1,79 @@
+.breed-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.breed-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+@media (max-width: 480px) {
+  .breed-stats-grid { grid-template-columns: 1fr; }
+}
+
+.breed-stat {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  transition: border-color 0.2s ease;
+}
+
+.breed-stat:hover {
+  border-color: var(--border-strong);
+}
+
+.breed-stat-icon {
+  font-size: 22px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.breed-stat-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.breed-stat-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.breed-stat-value {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.breed-features {
+  background: rgba(212, 168, 71, 0.04);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent-gold);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  padding: 14px 16px;
+}
+
+.breed-features-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  color: var(--accent-gold);
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.breed-features-text {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
